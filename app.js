@@ -1,4 +1,8 @@
+
 "use strict";
+const openHours = ["06:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"];
+console.log(openHours.length);
+
 const store = {
     location: "",
     minCx: "",
@@ -7,8 +11,7 @@ const store = {
     maxCookie: "",
     minCookiesPerHour: "",
     maxCookiesperHour: "",
-    openHours: ["06:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"],
-    
+
     getminCx: function() {
         this.minCx = randomCx(0,30);
         },
@@ -37,7 +40,7 @@ const store = {
 
 function randomCx(min,max){
     const minCxArray = [];
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < openHours.length; i++) {
         minCxArray.push((Math).floor(Math.random() * (max - min + 1) + min));
     }
     console.log(minCxArray);
@@ -45,7 +48,7 @@ function randomCx(min,max){
 
 function randomCookie(min,max){
     const meanCookieArray = [];
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < openHours.length; i++) {
         meanCookieArray.push((Math).floor(Math.random() * (max - min + 1) + min));
     }
     console.log(meanCookieArray);
@@ -53,7 +56,7 @@ function randomCookie(min,max){
 
 function cookiesPerHour() {
     const cookiesPerHourArray = [];
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < openHours.length; i++) {
         cookiesPerHourArray.push((store.minCx[i])*(store.minCookie[i]));
 }
     console.log(cookiesPerHourArray);
