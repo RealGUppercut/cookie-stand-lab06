@@ -82,11 +82,11 @@ function hourRow() {
 
 hourRow();
     
-const seattle = new Store("seattle", 23, 65, 6.3);
-const tokyo = new Store("tokyo", 3, 24, 1.2);
-const dubia = new Store("dubia", 11, 38, 2.3);
-const paris = new Store("paris", 20, 38, 2.3);
-const lima = new Store("lima", 2, 16, 4.6);
+const seattle = new Store("Seattle", 23, 65, 6.3);
+const tokyo = new Store("Tokyo", 3, 24, 1.2);
+const dubai = new Store("Dubai", 11, 38, 2.3);
+const paris = new Store("Paris", 20, 38, 2.3);
+const lima = new Store("Lima", 2, 16, 4.6);
 
 function hourTotals() {
     const tr = document.createElement("tr");

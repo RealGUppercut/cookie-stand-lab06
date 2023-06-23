@@ -20,6 +20,7 @@ body {
   table,
   th,
   td {
+    text-align: center;
     border: 2px solid darkred;
     border-collapse: collapse;
   }
@@ -31,5 +32,16 @@ body {
   th,
   td { 
     padding: 5px
-    
+  }
+
+  td {
+  background-color: lightgoldenrodyellow ;
+  }
+  
+  tr {
+    background-color: rgba(218, 165, 32, 0.354) ;
+    }
+
+  container {
+    align-items: center;
   }
