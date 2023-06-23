@@ -26,6 +26,7 @@ body {
   }
   
   table {
+    margin-left: 32px;
     margin-bottom: 10px;
   }
   
@@ -43,5 +44,5 @@ body {
     }
 
   container {
-    align-items: center;
+    width: auto;
   }
