@@ -1,0 +1,35 @@
+body {
+    font-family:'Courier New', Courier, monospace
+  }
+  
+  article {
+    background-color: goldenrod;
+    border: 5px solid darkolivegreen;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  table,
+  th,
+  td {
+    border: 2px solid darkred;
+    border-collapse: collapse;
+  }
+  
+  table {
+    margin-bottom: 10px;
+  }
+  
+  th,
+  td { 
+    padding: 5px
+    
+  }
